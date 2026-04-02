@@ -1,21 +1,75 @@
 
+/* Keskittää koko valkoisen laatikon keskelle */
 .main {
-    max-height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
+
 
 .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 600px;
     background-color: white;
-    height: 80vh;
+    height: 60vh;
     padding: 20px 20px;
     border-radius: 20px;
-    border-color: grey 2px solid;
+    border: grey 2px solid;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+}
 .title-content {
     display: flex;
-    justify-content: row;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
+.enter-text {
+    padding: 20px 0px;
+    color: rgb(60, 60, 60);
+    font-size: 18px;
+}
+
+.email-text {
+   display: block;
+   text-align: center;
+   font-size: 18px;
+}
+
+.email-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+    min-width: 100%;
+}
+
+.input-email {
+    padding: 10px;
+    width: 90%;
+}
+.submit-button {
+    display: block;
+    font-size: 16px;
+    padding: 15px 20px;
+    margin-top: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(152, 62, 174);
+    color: white;
+    min-width: 100%;
+}
+.problem {
+    font-size: 14px;
+    margin-top: 30px;
+}
